@@ -1,0 +1,15 @@
+#N canvas 431 128 760 735 12;
+#X msg 137 169 0.0888056 0.890344 0.0548282 -0.0888056 0.0548282;
+#X obj 429 300 biquad~;
+#X obj 454 356 lop~ 11000;
+#X obj 453 384 lop~ 11000;
+#X obj 435 239 noise~;
+#X obj 319 60 loadbang;
+#X text 287 129 notch: 4400 1100;
+#X obj 453 409 outlet~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 7 0;
+#X connect 4 0 1 0;
+#X connect 5 0 0 0;
